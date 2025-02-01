@@ -1,9 +1,9 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-    }
+    public static void main(String[] args) throws Exception {
+        // Создание экземпляра Student-а:
+        Student student1 = new Student("МГУ", "Росиия", "Петров Петр Петрович", "119991, Российская Федерация, Москва, Ленинские горы, д.1", 18, 3,4,3,5,5,5);
+        TestRunnerCorr.runTests(student1);
+       }
 }
