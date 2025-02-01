@@ -4,16 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee418b24-3061-4c63-a539-46e3b957e241" name="Changes" comment="Commit №2">
-      <change afterPath="$PROJECT_DIR$/src/TestException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TestRunner.java" afterDir="false" />
+    <list default="true" id="ee418b24-3061-4c63-a539-46e3b957e241" name="Changes" comment="Commit №3">
+      <change afterPath="$PROJECT_DIR$/src/TestRunnerCorr.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MethodStruct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestRunner.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -23,18 +32,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "klaus1776"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;klaus1776&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/klaus1776/JavaProReflectionApi",
-    "accountId": "df3a44a6-6f78-417b-9e24-2dae3808392c"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/klaus1776/JavaProReflectionApi&quot;,
+    &quot;accountId&quot;: &quot;df3a44a6-6f78-417b-9e24-2dae3808392c&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -48,12 +57,26 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "task__001",
+    "git-widget-placeholder": "task__002",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Kolya/JAVA/Programming/JavaPro/JavaPro",
+    "last_opened_file_path": "D:/Kolya/JAVA/Programming/JavaPro/KurishevRefApiG",
     "onboarding.tips.debug.path": "D:/Kolya/JAVA/Programming/JavaPro/JavaPro/src/Main.java"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="JavaPro" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -79,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738236065282</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Commit №3">
+      <option name="closed" value="true" />
+      <created>1738236377338</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1738236377338</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -96,6 +127,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit №1" />
     <MESSAGE value="Commit №2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit №2" />
+    <MESSAGE value="Commit №3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit №3" />
   </component>
 </project>

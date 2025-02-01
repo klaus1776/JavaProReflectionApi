@@ -37,90 +37,99 @@ public class Student {
         Student.studCount ++;
     }
 
-    @CsvSource("Василий Иванов,20,4.34,false")
+    @Test
+    @CsvSource(value = "Василий Иванов, 20, 4.34, false")
     public static void printStudentInfo(String name, int age, double averageScore, boolean expelled) {
         System.out.println( "Студент{" +
                             "Имя = '" + name + '\'' +
-                            "; возраст = " + age +
+                            "; возраст = '" + age +
                             "; средний балл = " + averageScore +
                             "; отчислен = " + expelled +
                             '}' );
     }
 
     @BeforeTest
-    public static void beforeTest(MethodStruct methodStruct) {
-        if (methodStruct != null) methodStruct.tested = false;
+    public static void beforeTest() {
+        System.out.println("BeforeTest");
     }
 
     @AfterTest
-    public static void afterTest(MethodStruct methodStruct) {
-        if (methodStruct != null) methodStruct.tested = true;
+    public static void afterTest() {
+        System.out.println("AfterTest");
     }
 
-    @Test(priority = 9)
+    //@Test(priority = 9)
     public static void setUnivercityName(String univercityName) {
         Student.univercityName = univercityName;
     }
-    @Test(priority = 10)
+    //@Test(priority = 10)
     public static void setCountryName(String countryName) {
         Student.countryName = countryName;
     }
-    @Test(priority = 2)
+    //@Test(priority = 2)
     public void setName(String name) {
         this.name = name;
     }
-    @Test(priority = 3)
+    //@Test(priority = 3)
     public void setAddressReg(String addressReg) {
         this.addressReg = addressReg;
     }
-    @Test(priority = 1)
+    //@Test(priority = 1)
     public void setAge(int age) {
         this.age = age;
     }
-    @Test(priority = 4)
+    //@Test(priority = 4)
     public void setEstimation(int... estimation) {
         this.estimation = Arrays.copyOf(estimation, estimation.length);
     }
 
     @Test
     public static String getUnivercityName() {
+        System.out.println("Test #5");
         return univercityName;
     }
-    @Test
+    @Test(priority = 3)
     public static String getCountryName() {
+        System.out.println("Test #3");
         return countryName;
     }
-    @Test(priority = 6)
+
+    @Test(priority = 4)
     public String getName() {
+        System.out.println("Test #4");
         return name;
     }
-    @Test(priority = 9)
+    @Test(priority = 6)
     public String getAddressReg() {
+        System.out.println("Test #6");
         return addressReg;
     }
-    @Test(priority = 9)
+    @Test(priority = 8)
     public int getAge() {
+        System.out.println("Test #8");
         return age;
     }
 
     @AfterSuite
     public static int getStudCount() {
+        System.out.println("AfterSuite");
         return studCount;
     }
 
-    @Test(priority = 9)
     public int[] getEstimation() {
         return Arrays.copyOf(estimation, estimation.length);
     }
 
     // Вычисление средней оценки для заданного набора оценок
-    @BeforeSuite
     public static long getAverageEstRnd(int[] estimations) {
         return Math.round( Arrays.stream(estimations).average().getAsDouble() );
     }
+    @BeforeSuite
+    public static void runBeforeSuite() {
+        System.out.println("BeforeSuite");
+    }
 
     // Вычисление среднего значения оценок студента
-    @Test(priority = 10)
     public double getAverageEst(){
         return Arrays.stream(estimation).average().getAsDouble();
     }
